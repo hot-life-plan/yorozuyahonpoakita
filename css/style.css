@@ -119,18 +119,39 @@ header {
 
 /* Buttons */
 .btn-phone, .btn-line {
-    padding: 10px 25px;
+    padding: 12px 32px;
     border-radius: 50px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .btn-phone {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: var(--white);
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 36px;
+}
+
+.btn-phone .phone-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
+.btn-phone .phone-number {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .btn-phone:hover {
