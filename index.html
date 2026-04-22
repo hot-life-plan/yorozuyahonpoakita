@@ -21,6 +21,16 @@
       ========================================================
     -->
 
+    <!-- Google検索エンジンに本物のURLを伝える -->
+    <link rel="canonical" href="https://yorozuyahonpoakita.hot-life.workers.dev/">
+
+    <!-- アクセスしたURLが github.io だった場合のみ、本番へ転送する -->
+    <script>
+        if (window.location.hostname.includes("github.io")) {
+            window.location.replace("https://yorozuyahonpoakita.hot-life.workers.dev" + window.location.pathname);
+        }
+    </script>
+
     <!-- SEO / SNS Tags -->
     <meta property="og:title" content="よろずや本舗秋田 | 秋田市の便利屋・雪かき・草刈り">
     <meta property="og:description" content="秋田市の「困った」を「笑顔」に！雪かき、草刈り、不用品回収など、お困りごとは何でもご相談ください。">
